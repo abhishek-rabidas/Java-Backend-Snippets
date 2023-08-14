@@ -8,6 +8,12 @@ public class RemoteAPICall {
 
     public static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
 
+    /**
+     * Read more <a href="https://square.github.io/okhttp/">OkHttp</a>
+     *
+     * @param apiURL -> the url of the remote API endpoint
+     * @param JSONBody -> request body
+     */
     public void doRemoteAPICall(String apiURL, String JSONBody) {
         OkHttpClient okHttpClient = new OkHttpClient();
 
