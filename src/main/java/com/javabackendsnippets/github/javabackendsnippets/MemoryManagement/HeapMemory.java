@@ -16,5 +16,10 @@ public class HeapMemory {
         System.out.println("Used Heap Memory: " + heapMemoryUsage.getUsed() + " bytes");
     }
 
+    public void getRuntimeMemoryDetails() {
+        Runtime runtime = Runtime.getRuntime();
+        long usedMemory = runtime.totalMemory() - runtime.freeMemory();
+        System.out.println("Used Memory: " + usedMemory + " bytes");
+    }
 
 }
