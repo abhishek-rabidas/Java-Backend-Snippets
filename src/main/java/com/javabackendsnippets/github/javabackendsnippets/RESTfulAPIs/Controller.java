@@ -12,4 +12,9 @@ public class Controller {
         return ResponseEntity.ok("API Object");
     }
 
+    @PostMapping("/postObject")
+    public ResponseEntity<Object> postObject(@RequestBody RequestBodyObject requestBodyObject) {
+
+    }
+
 }
