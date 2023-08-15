@@ -13,8 +13,8 @@ public class Controller {
     }
 
     @PostMapping("/postObject")
-    public ResponseEntity<Object> postObject(@RequestBody RequestBodyObject requestBodyObject) {
-
+    public void postObject(@RequestBody RequestBodyObject requestBodyObject) {
+        System.out.println(requestBodyObject.getMessage());
     }
 
 }
