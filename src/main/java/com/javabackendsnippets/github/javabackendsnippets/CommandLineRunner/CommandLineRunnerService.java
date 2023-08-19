@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.List;
 
 @Service
 public class CommandLineRunnerService {
@@ -44,6 +45,26 @@ public class CommandLineRunnerService {
     }
 
     public static void runCommandWithProcessBuilder() {
+        try {
+            // Command to execute
+            List<String> command = List.of("cmd.exe", "/c", "echo", "hello world!");
 
+            ProcessBuilder processBuilder = new ProcessBuilder(command);
+            processBuilder.redirectErrorStream(true); // Redirect error stream to output
+
+            Process process = processBuilder.start();
+
+            // Read the output
+            java.io.InputStream inputStream = process.getInputStream();
+            java.util.Scanner scanner = new java.util.Scanner(inputStream).useDelimiter("\\A");
+            String output = scanner.hasNext() ? scanner.next() : "";
+
+            System.out.println("Output:\n" + output);
+
+            int exitCode = process.waitFor(); // Wait for the process to complete
+            System.out.println("Exit Code: " + exitCode);
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
