@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 @Service
 public class CommandLineRunnerService {
 
-    public static void getTimeFromCLI() {
+    public static void runCommand() {
 
         String command = "cmd.exe /c echo Hello, World!";
 
