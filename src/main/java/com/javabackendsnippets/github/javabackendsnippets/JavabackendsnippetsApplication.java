@@ -1,5 +1,6 @@
 package com.javabackendsnippets.github.javabackendsnippets;
 
+import com.javabackendsnippets.github.javabackendsnippets.CommandLineRunner.CommandLineRunnerService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JavabackendsnippetsApplication {
 
 	public static void main(String[] args) {
+		CommandLineRunnerService.getTimeFromCLI();
 		SpringApplication.run(JavabackendsnippetsApplication.class, args);
 	}
 
