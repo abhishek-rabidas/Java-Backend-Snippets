@@ -11,6 +11,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class FaceDetection {
 
+    /**
+     * OpenCV: open source computer vision library
+     *<div></div>
+     * Homepage:    http://opencv.org
+     * Online docs: http://docs.opencv.org
+     * Q&A forum:   http://answers.opencv.org
+     * Dev zone:    http://code.opencv.org
+     */
+
     public void storeFacesFromImage(String imageURL) {
 
         CascadeClassifier classifier = new CascadeClassifier("src/main/resources/model/haarcascade_frontalface_default.xml");
