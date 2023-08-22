@@ -14,10 +14,9 @@ public class FaceDetection {
     /**
      * OpenCV: open source computer vision library
      *<div></div>
-     * Homepage:    http://opencv.org
-     * Online docs: http://docs.opencv.org
-     * Q&A forum:   http://answers.opencv.org
-     * Dev zone:    http://code.opencv.org
+     * <b>Homepage:</b>    <a href="http://opencv.org">http://opencv.org</a>
+     * <div></div>
+     * <b>Online docs:</b> <a href="http://docs.opencv.org">http://docs.opencv.org</a>
      */
 
     public void storeFacesFromImage(String imageURL) {
