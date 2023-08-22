@@ -2,7 +2,9 @@ package com.javabackendsnippets.github.javabackendsnippets.OpenCV;
 
 import jakarta.annotation.PostConstruct;
 import nu.pattern.OpenCV;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
 public class LoadOpenCV {
 
     @PostConstruct

@@ -6,7 +6,9 @@ import org.opencv.core.Rect;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
+import org.springframework.stereotype.Service;
 
+@Service
 public class FaceDetection {
 
     public void storeFacesFromImage(String imageURL) {
